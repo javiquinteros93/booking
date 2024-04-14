@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://thesimsdb-test.cnyqegjgetrv.us-east-2.rds.amazonaws.com/booking-g5-test
+    username: admin
+    password: administrador
+  jpa:
+    hibernate.ddl-auto: none
+    generate-ddl: false
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  security:
+    jwt.secret: jwtgrupo5
+    jwt.expiration: 36000
